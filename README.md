@@ -2,6 +2,8 @@
 
 [![serverless](https://dl.dropboxusercontent.com/s/d6opqwym91k0roz/serverless_badge_v3.svg)](http://www.serverless.com)
 
+[![CircleCI](https://circleci.com/gh/mjmitchell86/ServerlessNetCoreServiceHandler.svg?style=svg)](https://circleci.com/gh/mjmitchell86/ServerlessNetCoreServiceHandler)
+
 This is a proof of concept for building services using .Net Core 2.0 and the Serverless Framework with Dependency Injection through AutoFac.  This is a foundation for a service.  The goal is to use shared libraries (Nuget packages) as our services we inject to our handlers.  Each Handlers project would control a specific domain of an API.
 
 ## Getting Started

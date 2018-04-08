@@ -4,10 +4,19 @@ jobs:
     docker:
       - image: microsoft/dotnet:2-sdk
     steps:
+
       - checkout
       - run:
           name: Restore
           command: dotnet restore
-      - test:
+      - run:
+          name: Install Serverless CLI and dependencies
+          command: |
+            sudo npm i -g serverless
+            npm install
+      - run:
           name: Tests!
-          command: dotnet test \Tests -xml $CIRCLE_ARTIFACTS/junit.xml
+          command: dotnet test \Tests 
+      - run:
+          name: Deploy application 
+          command: sls deploy

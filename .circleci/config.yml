@@ -15,7 +15,5 @@ jobs:
       - run:
           name: Tests!
           command: dotnet test \Tests
-      - run:
-          name: Store Test Results
-          command: store_test_results
-          path: /
+     - store_test_results:
+          path: test-results

@@ -9,14 +9,7 @@ jobs:
       - run:
           name: Restore
           command: dotnet restore
-      - run:
-          name: Install Serverless CLI and dependencies
-          command: |
-            sudo npm i -g serverless
-            npm install
+      
       - run:
           name: Tests!
           command: dotnet test \Tests 
-      - run:
-          name: Deploy application 
-          command: sls deploy

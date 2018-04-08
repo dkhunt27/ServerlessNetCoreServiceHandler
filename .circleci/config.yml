@@ -7,13 +7,9 @@ jobs:
       
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
-      - run:
-          name: Print the Current Time
-          command: date
+          name: Restore
+          command: dotnet restore
       - run:
           name: Tests!
-          command: dotnet test \Tests
-     - store_test_results:
-          path: test-results
+          command: dotnet test \Tests -xml $CIRCLE_ARTIFACTS/junit.xml
+       - test:

@@ -1,0 +1,14 @@
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/bin/release/netcoreapp2.0/appsettings.json
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/bin/release/netcoreapp2.0/Handlers.deps.json
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/bin/release/netcoreapp2.0/Handlers.runtimeconfig.json
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/bin/release/netcoreapp2.0/Handlers.runtimeconfig.dev.json
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/bin/release/netcoreapp2.0/Handlers.dll
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/bin/release/netcoreapp2.0/Handlers.pdb
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/bin/release/netcoreapp2.0/Domain.dll
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/bin/release/netcoreapp2.0/Domain.pdb
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/obj/release/netcoreapp2.0/Handlers.csproj.CoreCompileInputs.cache
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/obj/release/netcoreapp2.0/Handlers.AssemblyInfoInputs.cache
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/obj/release/netcoreapp2.0/Handlers.AssemblyInfo.cs
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/obj/release/netcoreapp2.0/Handlers.csproj.CopyComplete
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/obj/release/netcoreapp2.0/Handlers.dll
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/Handlers/obj/release/netcoreapp2.0/Handlers.pdb

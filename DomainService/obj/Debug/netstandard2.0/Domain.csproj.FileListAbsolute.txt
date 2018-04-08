@@ -1,0 +1,8 @@
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/DomainService/bin/Debug/netstandard2.0/Domain.deps.json
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/DomainService/bin/Debug/netstandard2.0/Domain.dll
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/DomainService/bin/Debug/netstandard2.0/Domain.pdb
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/DomainService/obj/Debug/netstandard2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/DomainService/obj/Debug/netstandard2.0/Domain.AssemblyInfoInputs.cache
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/DomainService/obj/Debug/netstandard2.0/Domain.AssemblyInfo.cs
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/DomainService/obj/Debug/netstandard2.0/Domain.dll
+/Users/Matt/Documents/Dev/serverless/ServerlessNetCoreServiceHandler/DomainService/obj/Debug/netstandard2.0/Domain.pdb

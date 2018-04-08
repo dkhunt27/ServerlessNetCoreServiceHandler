@@ -8,6 +8,6 @@ jobs:
       - run:
           name: Restore
           command: dotnet restore
-      - run:
+      - test:
           name: Tests!
           command: dotnet test \Tests -xml $CIRCLE_ARTIFACTS/junit.xml

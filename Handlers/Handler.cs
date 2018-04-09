@@ -11,12 +11,14 @@ namespace Handlers
     public class Handler
     {
         private readonly IDomainService _domainService;
+        private readonly ILogger _logger;
 
         public Handler(ILambdaContext context){
             var container = GetContainer(context);
             _domainService = container.Resolve<IDomainService>();
+            _logger = container.Resolve<ILogger<Handler>>();
         }
-        
+
         private static IContainer GetContainer(ILambdaContext lambdaContext)
         {
             var builder = new ContainerBuilder();
@@ -26,12 +28,13 @@ namespace Handlers
 
         public APIGatewayProxyResponse Hello(APIGatewayProxyRequest request, ILambdaContext context)
         {
-            context.Logger.Log(request.ToString());
             var result = "";
-            try{
+
+            try
+            {
             var test = request.QueryStringParameters["test"];
             result = _domainService.Process(test);
-            }catch(Exception ex){
+            } catch(Exception ex){
                 result = "FAIL";
                  context.Logger.LogLine(ex.InnerException.Message);
             }
@@ -45,7 +48,7 @@ namespace Handlers
 
         public APIGatewayProxyResponse HealthCheck(APIGatewayProxyRequest request, ILambdaContext context)
         {
-            var logger = GetContainer(context).Resolve<ILogger<Handler>>();
+            var logger = _logger;
 
             logger.LogTrace("Function name is {0}", context.FunctionName);
             logger.LogTrace("Http method is {0}", request.HttpMethod);

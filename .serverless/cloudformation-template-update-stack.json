@@ -99,7 +99,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "matt-us-east-2-serverless-deploys",
-          "S3Key": "serverless/ServerlessNetCoreServiceHandler/v1/1523241690935-2018-04-09T02:41:30.935Z/deploy-package.zip"
+          "S3Key": "serverless/ServerlessNetCoreServiceHandler/v1/1523242902871-2018-04-09T03:01:42.871Z/deploy-package.zip"
         },
         "FunctionName": "ServerlessNetCoreServiceHandler-v1-hello",
         "Handler": "Handlers::Handlers.Handler::Hello",
@@ -133,7 +133,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "matt-us-east-2-serverless-deploys",
-          "S3Key": "serverless/ServerlessNetCoreServiceHandler/v1/1523241690935-2018-04-09T02:41:30.935Z/deploy-package.zip"
+          "S3Key": "serverless/ServerlessNetCoreServiceHandler/v1/1523242902871-2018-04-09T03:01:42.871Z/deploy-package.zip"
         },
         "FunctionName": "ServerlessNetCoreServiceHandler-v1-healthcheck",
         "Handler": "Handlers::Handlers.Handler::HealthCheck",
@@ -281,7 +281,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1523241690972": {
+    "ApiGatewayDeployment1523242902905": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {

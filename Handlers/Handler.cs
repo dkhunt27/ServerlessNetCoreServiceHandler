@@ -36,7 +36,7 @@ namespace Handlers
             result = _domainService.Process(test);
             } catch(Exception ex){
                 result = "FAIL";
-                 context.Logger.LogLine(ex.InnerException.Message);
+                 _logger.LogError(ex.InnerException.Message);
             }
            return new APIGatewayProxyResponse()
             {
@@ -48,10 +48,8 @@ namespace Handlers
 
         public APIGatewayProxyResponse HealthCheck(APIGatewayProxyRequest request, ILambdaContext context)
         {
-            var logger = _logger;
-
-            logger.LogTrace("Function name is {0}", context.FunctionName);
-            logger.LogTrace("Http method is {0}", request.HttpMethod);
+            _logger.LogInformation("Function name is {0}", context.FunctionName);
+            _logger.LogInformation("Http method is {0}", request.HttpMethod);
 
             return new APIGatewayProxyResponse()
             {

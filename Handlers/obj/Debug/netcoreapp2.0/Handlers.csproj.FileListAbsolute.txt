@@ -12,3 +12,4 @@
 /Users/mmitchell/Documents/Dev/ServerlessNetCoreServiceHandler/Handlers/obj/Debug/netcoreapp2.0/Handlers.csproj.CopyComplete
 /Users/mmitchell/Documents/Dev/ServerlessNetCoreServiceHandler/Handlers/obj/Debug/netcoreapp2.0/Handlers.dll
 /Users/mmitchell/Documents/Dev/ServerlessNetCoreServiceHandler/Handlers/obj/Debug/netcoreapp2.0/Handlers.pdb
+/Users/mmitchell/Documents/Dev/ServerlessNetCoreServiceHandler/Handlers/obj/Debug/netcoreapp2.0/Handlers.csprojResolveAssemblyReference.cache

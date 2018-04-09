@@ -36,3 +36,4 @@
 /Users/mmitchell/Documents/Dev/ServerlessNetCoreServiceHandler/Tests/obj/Debug/netcoreapp2.0/Tests.pdb
 /Users/mmitchell/Documents/Dev/ServerlessNetCoreServiceHandler/Tests/bin/Debug/netcoreapp2.0/Example.dll
 /Users/mmitchell/Documents/Dev/ServerlessNetCoreServiceHandler/Tests/bin/Debug/netcoreapp2.0/Example.pdb
+/Users/mmitchell/Documents/Dev/ServerlessNetCoreServiceHandler/Tests/obj/Debug/netcoreapp2.0/Tests.csprojResolveAssemblyReference.cache

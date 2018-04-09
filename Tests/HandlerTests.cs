@@ -1,14 +1,12 @@
 ﻿using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.TestUtilities;
-using Example;
 using Handlers;
 using Xunit;
-using NSubstitute;
 using System.Collections.Generic;
 
 namespace Tests
 {
-    public class HandlerTests
+	public class HandlerTests
     {
         [Fact]
         public void TestHealthCheck()

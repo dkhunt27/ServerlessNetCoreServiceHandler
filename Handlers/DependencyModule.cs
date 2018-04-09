@@ -2,7 +2,7 @@
 using Amazon.Lambda.Core;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using Domain;
+using Example;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -11,11 +11,18 @@ namespace Handlers
 {
     public class DependencyModule : Module
     {
-        private readonly ILambdaContext lambdaContext;
+        private readonly ILambdaContext _lambdaContext;
 
         public DependencyModule(ILambdaContext lambdaContext)
         {
-            this.lambdaContext = lambdaContext;
+            _lambdaContext = lambdaContext;
+        }
+
+        public static IContainer BuildContainer(ILambdaContext lambdaContext)
+        {
+            var builder = new ContainerBuilder();
+            builder.RegisterModule(new DependencyModule(lambdaContext));
+            return builder.Build();
         }
 
         private void ConfigureLogging(ContainerBuilder builder)
@@ -39,11 +46,11 @@ namespace Handlers
         {
             base.Load(builder);
 
-            builder.RegisterInstance(lambdaContext);
+            builder.RegisterInstance(_lambdaContext);
 
             ConfigureLogging(builder);
 
-            builder.RegisterType<DomainService>().As<IDomainService>().SingleInstance();
+            builder.RegisterType<ExampleService>().As<IExampleService>().SingleInstance();
         }
     }
 }

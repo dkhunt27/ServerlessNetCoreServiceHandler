@@ -14,7 +14,7 @@
     <PackageReference Include="AWS.Logger.AspNetCore" Version="1.2.5" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DomainService\Domain.csproj" />
+    <ProjectReference Include="..\ExampleService\Example.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.json">

@@ -1,6 +1,6 @@
 ﻿using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.TestUtilities;
-using Domain;
+using Example;
 using Handlers;
 using Xunit;
 using NSubstitute;

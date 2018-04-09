@@ -1,4 +1,4 @@
-﻿using Domain;
+﻿using Example;
 using Xunit;
 using NSubstitute;
 using Microsoft.Extensions.Logging;
@@ -10,9 +10,9 @@ namespace Tests
         [Fact]
         public void TestResult()
         {
-            var service = new DomainService(Substitute.For<ILogger<DomainService>>());
+            var service = new ExampleService(Substitute.For<ILogger<ExampleService>>());
 
-            var result = service.Process("Test");
+            var result = service.Test("Test");
 
             Assert.IsType<string>(result);
         }

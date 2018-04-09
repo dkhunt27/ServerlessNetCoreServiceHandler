@@ -21,6 +21,12 @@ yarn global add serverless
 Install .Net Core 2.0. 
 [https://www.microsoft.com/net/download]
 
+## Using for foundation of new service
+Navigate to working/empty directory in your terminal:
+```
+serverless install --url https://github.com/mjmitchell86/ServerlessNetCoreServiceHandler
+```
+
 
 ## Build
 

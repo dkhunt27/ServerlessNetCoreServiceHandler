@@ -10,6 +10,13 @@ namespace Handlers
 {
     public class Handler
     {
+        private readonly IDomainService _domainService;
+
+        public Handler(ILambdaContext context){
+            var container = GetContainer(context);
+            _domainService = container.Resolve<IDomainService>();
+        }
+        
         private static IContainer GetContainer(ILambdaContext lambdaContext)
         {
             var builder = new ContainerBuilder();
@@ -22,9 +29,8 @@ namespace Handlers
             context.Logger.Log(request.ToString());
             var result = "";
             try{
-            var serviceProcess = GetContainer(context).Resolve<IDomainService>();
             var test = request.QueryStringParameters["test"];
-            result = serviceProcess.Process(test);
+            result = _domainService.Process(test);
             }catch(Exception ex){
                 result = "FAIL";
                  context.Logger.LogLine(ex.InnerException.Message);

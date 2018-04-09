@@ -13,11 +13,10 @@ namespace Tests
         [Fact]
         public void TestHealthCheck()
         {
-            var handler = new Handler();
-
-            var request = new APIGatewayProxyRequest();
             var context = new TestLambdaContext();
-
+            var handler = new Handler(context);
+            var request = new APIGatewayProxyRequest();
+           
             var response = handler.HealthCheck(request, context);
 
             Assert.Equal(200, response.StatusCode);
@@ -27,10 +26,9 @@ namespace Tests
         [Fact]
         public void TestHello()
         {
-            var handler = new Handler();
-            var request = new APIGatewayProxyRequest(){QueryStringParameters = new Dictionary<string, string>(){{"test","howdy"}}};
-
             var context = new TestLambdaContext();
+            var handler = new Handler(context);
+            var request = new APIGatewayProxyRequest(){QueryStringParameters = new Dictionary<string, string>(){{"test","howdy"}}};
 
             var response = handler.Hello(request, context);
 

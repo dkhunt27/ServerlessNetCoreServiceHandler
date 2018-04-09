@@ -115,7 +115,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "matt-us-east-2-serverless-deploys",
-                "S3Key": "serverless/ServerlessNetCoreServiceHandler/v1/1523220786976-2018-04-08T20:53:06.976Z/deploy-package.zip"
+                "S3Key": "serverless/ServerlessNetCoreServiceHandler/v1/1523241690935-2018-04-09T02:41:30.935Z/deploy-package.zip"
               },
               "FunctionName": "ServerlessNetCoreServiceHandler-v1-hello",
               "Handler": "Handlers::Handlers.Handler::Hello",
@@ -134,14 +134,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "HelloLambdaVersionb2YFyIA1HDGtWxkQo9uZit2BTI3Mnwemoo8DXbOOFOE": {
+          "HelloLambdaVersionTUw6RwcfKOvEjGBUUChBiLYnoqh0z4rpEFT70C3G8": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HelloLambdaFunction"
               },
-              "CodeSha256": "4xMKMvu96shEfLVwT80JcCf+xw6AxMenXGu4mVP3a1c="
+              "CodeSha256": "LJk4Z2bDVI7OrutNRn2idSK+U/9jX8K8CFbdWjJh+v0="
             }
           },
           "HealthcheckLambdaFunction": {
@@ -149,7 +149,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "matt-us-east-2-serverless-deploys",
-                "S3Key": "serverless/ServerlessNetCoreServiceHandler/v1/1523220786976-2018-04-08T20:53:06.976Z/deploy-package.zip"
+                "S3Key": "serverless/ServerlessNetCoreServiceHandler/v1/1523241690935-2018-04-09T02:41:30.935Z/deploy-package.zip"
               },
               "FunctionName": "ServerlessNetCoreServiceHandler-v1-healthcheck",
               "Handler": "Handlers::Handlers.Handler::HealthCheck",
@@ -168,14 +168,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "HealthcheckLambdaVersionftTH4q1Hr7hzhKU8WEOiR0QRkCzpmpeuqxBivMO7N4g": {
+          "HealthcheckLambdaVersionuo60usHqkad2ofWdARdQIvIFn4YW8Hby9HvEKNuqpSc": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HealthcheckLambdaFunction"
               },
-              "CodeSha256": "4xMKMvu96shEfLVwT80JcCf+xw6AxMenXGu4mVP3a1c="
+              "CodeSha256": "LJk4Z2bDVI7OrutNRn2idSK+U/9jX8K8CFbdWjJh+v0="
             }
           },
           "ApiGatewayRestApi": {
@@ -297,7 +297,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1523220787007": {
+          "ApiGatewayDeployment1523241690972": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -384,13 +384,13 @@
           "HelloLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HelloLambdaVersionb2YFyIA1HDGtWxkQo9uZit2BTI3Mnwemoo8DXbOOFOE"
+              "Ref": "HelloLambdaVersionTUw6RwcfKOvEjGBUUChBiLYnoqh0z4rpEFT70C3G8"
             }
           },
           "HealthcheckLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HealthcheckLambdaVersionftTH4q1Hr7hzhKU8WEOiR0QRkCzpmpeuqxBivMO7N4g"
+              "Ref": "HealthcheckLambdaVersionuo60usHqkad2ofWdARdQIvIFn4YW8Hby9HvEKNuqpSc"
             }
           },
           "ServiceEndpoint": {
@@ -438,7 +438,7 @@
     }
   },
   "package": {
-    "artifactDirectoryName": "serverless/ServerlessNetCoreServiceHandler/v1/1523220786976-2018-04-08T20:53:06.976Z",
+    "artifactDirectoryName": "serverless/ServerlessNetCoreServiceHandler/v1/1523241690935-2018-04-09T02:41:30.935Z",
     "artifact": "deploy-package.zip"
   }
 }
